@@ -22,7 +22,7 @@ def breachcomp_check(targets, breachcomp_path):
             except Exception as e:
                 c.bad_news(f"Could not decode bytes for {t.target} results")
                 output = procfd.stdout
-                # print(output[:85], "[...]")
+                 print(output[:85], "[...]")
                 print(output)
                 continue
             if len(output) != 0:
