@@ -12,8 +12,8 @@ exec(open(os.path.join(here, "h8mail/utils/version.py")).read())
 with open("PyPi.rst") as readme_file:
     readme = readme_file.read()
 
-# with open("HISTORY.rst") as history_file:
-#     history = history_file.read()
+ with open("HISTORY.rst") as history_file:
+     history = history_file.read()
 
 requirements = ["requests"]
 
@@ -36,9 +36,9 @@ setup(
     description="Email OSINT and password breach hunting. Use h8mail to find passwords through different breach and reconnaissance services, or using your local data",
     install_requires=requirements,
     license="BSD license",
-    # long_description_content_type="text/markdown",
+     long_description_content_type="text/markdown",
     long_description=readme + "\n\n",
-    # long_description=readme + "\n\n" + history,
+     long_description=readme + "\n\n" + history,
     include_package_data=True,
     keywords="h8mail",
     name="h8mail",
